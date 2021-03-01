@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap") * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  border-radius: 20px;
+  box-shadow: black.2;
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+  width: 60vw;
+  height: auto;
+
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.header h2 {
+  color: var(--cyan);
+}
+
+.header h3 {
+  color: var(--bright-yellow);
+}
+
+.header p {
+  color: grey;
+}
+
+.main {
+  height: 110%;
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-box-1 {
+  width: 40%;
+  position: relative;
+  background-color: var(--cyan);
+  text-align: left;
+  padding: 3rem;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.main-box-1 h3 {
+  margin-top: -1rem;
+  text-transform: uppercase;
+  left: 0;
+}
+
+.main-box-1 span {
+  margin-top: -1rem;
+  margin: 10px;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--light-gray);
+}
+.main-box-1 h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+}
+.main-box-1 p {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+button {
+  background-color: var(--bright-yellow);
+  padding: 1rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  color: #fff;
+}
+.main-box-2 {
+  text-align: left;
+
+  width: 50%;
+
+  background-color: #4dffff;
+}
+.main-box-2 h2 {
+  text-align: center;
+}
+
+.main-box-2 li {
+  list-style: none;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+footer {
+  text-align: center;
+}
+
+@media screen and (max-height: 400px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    width: 281%;
+  }
+
+  .main-box-2 {
+    width: 59%;
+  }
+}
